@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Resource Index</title>
+    <meta
+      name="description"
+      content="A clear, searchable student resource index for classes, planning, financial aid, and campus life."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Student Resource Library home">
+        <span class="brand-mark" aria-hidden="true">SR</span>
+        <span>Student Resource Index</span>
+      </a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#resources">Resources</a>
+        <a href="#guides">Guides</a>
+        <a href="#submit">Submit</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="quote-slot quote-hero-left" data-quote-slot="hero-left"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">/student-index /v0.1</p>
+          <h1 id="hero-title">Find the resource before the deadline finds you.</h1>
+          <p class="hero-text">
+            A practical index for scholarships, study tools, planning help, campus services,
+            internships, and the small links that make school less confusing.
+          </p>
+          <form class="search-panel" role="search">
+            <label for="search">Search resources</label>
+            <div class="search-row">
+              <input id="search" name="search" type="search" placeholder="Try scholarships, writing, FAFSA..." autocomplete="off">
+              <button type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+        <div class="hero-visual" aria-label="Featured resource index cards">
+          <div class="visual-window">
+            <span>hello.student</span>
+            <span>status: compiling</span>
+          </div>
+          <div class="visual-card visual-card-large">
+            <span>C1 / Financial Aid</span>
+            <strong>Applications, grants, deadlines</strong>
+            <p>Verified links first. Notes when context helps.</p>
+          </div>
+          <div class="visual-stack">
+            <div class="visual-card">
+              <span>C2 / Study</span>
+              <strong>Tools that actually help</strong>
+            </div>
+            <div class="visual-card accent">
+              <span>C3 / Career</span>
+              <strong>Internships and resume support</strong>
+            </div>
+          </div>
+        </div>
+        <div class="quote-slot quote-hero-right" data-quote-slot="hero-right"></div>
+      </section>
+
+      <section class="quick-links" aria-label="Popular topics">
+        <a href="#resources" data-filter-link="Financial Aid">Financial Aid</a>
+        <a href="#resources" data-filter-link="Study Tools">Study Tools</a>
+        <a href="#resources" data-filter-link="Career">Career</a>
+        <a href="#resources" data-filter-link="Wellbeing">Wellbeing</a>
+      </section>
+
+      <section class="collection-board" aria-labelledby="collections-title">
+        <div class="quote-slot quote-collections-left" data-quote-slot="collections-left"></div>
+        <div class="collection-heading">
+          <p class="eyebrow">/collections</p>
+          <h2 id="collections-title">Browse by what you need next</h2>
+        </div>
+        <div class="collection-grid">
+          <a href="#resources" data-filter-link="Financial Aid">
+            <span>01</span>
+            <strong>Paying for school</strong>
+            <small>FAFSA, scholarships, emergency funds</small>
+          </a>
+          <a href="#resources" data-filter-link="Study Tools">
+            <span>02</span>
+            <strong>Getting the work done</strong>
+            <small>Writing, research, tutoring, planning</small>
+          </a>
+          <a href="#resources" data-filter-link="Career">
+            <span>03</span>
+            <strong>Building a future</strong>
+            <small>Internships, resumes, portfolios</small>
+          </a>
+          <a href="#resources" data-filter-link="Wellbeing">
+            <span>04</span>
+            <strong>Staying steady</strong>
+            <small>Counseling, time, support systems</small>
+          </a>
+        </div>
+      </section>
+
+      <section class="section-shell" id="resources" aria-labelledby="resources-title">
+        <div class="quote-slot quote-resources-right" data-quote-slot="resources-right"></div>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Browse the library</p>
+            <h2 id="resources-title">Resources</h2>
+          </div>
+            <p>Add or edit links in <code>resources.js</code>. The index cards update automatically.</p>
+        </div>
+
+        <div class="filters" aria-label="Resource categories">
+          <button class="filter-button active" type="button" data-filter="All">All</button>
+          <button class="filter-button" type="button" data-filter="Financial Aid">Financial Aid</button>
+          <button class="filter-button" type="button" data-filter="Study Tools">Study Tools</button>
+          <button class="filter-button" type="button" data-filter="Career">Career</button>
+          <button class="filter-button" type="button" data-filter="Wellbeing">Wellbeing</button>
+        </div>
+
+        <div class="resource-grid" id="resource-grid" aria-live="polite"></div>
+        <p class="empty-state" id="empty-state" hidden>No matching resources yet. Try a different search or category.</p>
+      </section>
+
+      <section class="guide-band" id="guides" aria-labelledby="guides-title">
+        <div class="quote-slot quote-guides-left" data-quote-slot="guides-left"></div>
+        <div class="guide-intro">
+          <p class="eyebrow">/field-notes</p>
+          <h2 id="guides-title">Short guides for common student moments</h2>
+        </div>
+        <div class="guide-list">
+          <article>
+            <span>01</span>
+            <h3>When money is tight</h3>
+            <p>Find aid, emergency funds, textbook help, and deadlines in one place.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>When a paper is due</h3>
+            <p>Jump to writing centers, citation tools, library databases, and study support.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>When planning next steps</h3>
+            <p>Collect internships, advising links, transfer guidance, and career prep.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="submit-section" id="submit" aria-labelledby="submit-title">
+        <div>
+          <p class="eyebrow">/submit-link</p>
+          <h2 id="submit-title">Have a resource to add?</h2>
+          <p>
+            Save the name, link, category, and a one-sentence reason it helps students.
+            Then add it to the resource list when you update the site.
+          </p>
+        </div>
+        <a class="submit-button" href="mailto:hello@example.com?subject=Student%20Resource%20Suggestion">Suggest a resource</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Student Resource Index</p>
+      <p>Clear links, useful context, no maze.</p>
+    </footer>
+
+    <script src="resources.js"></script>
+    <script src="quotes.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
