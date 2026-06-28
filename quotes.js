@@ -17,8 +17,13 @@ const quotes = [
     avatar: "",
     position: "collections-left"
   },
-
- {
+  {
+    text: "The good sources are always three clicks deeper than expected.",
+    person: "library tab archaeologist",
+    avatar: "",
+    position: "resources-right"
+  },
+  {
     text: "No one knows where that form is. That is why this site exists.",
     person: "campus hallway legend",
     avatar: "",

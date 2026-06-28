@@ -694,6 +694,10 @@ code {
     transform: none;
   }
 
+  .quote-slot {
+    display: block;
+  }
+
   .quote-hero-left {
     order: 3;
   }
