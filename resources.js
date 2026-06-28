@@ -23,7 +23,9 @@ const resources = [
   {
     title: "Library Research Databases",
     category: "Study Tools",
-    description: " 1) <a href=https://annas-archive.gl/> Anna's archive, the largest open Library online</a>. https://scholar.google.com/ .",
+    description: " 1) <a href=https://annas-archive.gl/> Anna's archive, the largest open Library online</a>. <a href=https://scholar.google.com/> Google scholar</a> <a href=https://openstax.org/subjects> openstacks for free textbooks</a> 
+    
+    .",
     url: "#",
     tag: "Campus"
   },
