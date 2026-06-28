@@ -17,13 +17,8 @@ const quotes = [
     avatar: "",
     position: "collections-left"
   },
-  {
-    text: "If it is important, put it somewhere you will actually check.",
-    person: "notes app philosopher",
-    avatar: "",
-    position: "resources-right"
-  },
-  {
+
+ {
     text: "No one knows where that form is. That is why this site exists.",
     person: "campus hallway legend",
     avatar: "",
