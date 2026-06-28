@@ -150,8 +150,9 @@ a {
 }
 
 .quote-resources-right .side-quote {
-  right: clamp(14px, 2vw, 28px);
-  top: 42%;
+  position: static;
+  width: min(220px, 100%);
+  margin: 0 0 24px auto;
   --quote-angle: -1.5deg;
 }
 
