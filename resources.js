@@ -23,7 +23,7 @@ const resources = [
   {
     title: "Library Research Databases",
     category: "Study Tools",
-    description: "Replace this with your school library link so students can find journals and books quickly.",
+    description: " 1) <a href=https://annas-archive.gl/> Anna's archive, the largest open Library online</a>. https://scholar.google.com/ .",
     url: "#",
     tag: "Campus"
   },
